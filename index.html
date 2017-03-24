@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet">
+<style type="text/css">
+  
+	.node {
+    cursor: pointer;
+  }
+	html,body{
+		padding:0;
+		margin:0;
+    overflow: hidden;
+	}
+
+
+
+
+  .overlay{
+     /* background-color:#000; */
+     background-image: url("bg.jpg");
+     background-size: cover;
+  }
+   
+  .node circle {
+    fill: #434343;
+    stroke: #00fcda;
+    stroke-width: 1.5px;
+  }
+   
+  .node text {
+    font-size:12px; 
+    /*font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";*/
+    font-family: 'Electrolize', sans-serif;
+    fill: #00fcda; 
+  }
+   
+  .link {
+    fill: none;
+    stroke: gold;
+    stroke-width: 0.5px;
+  }
+
+  .templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .ghostCircle.show{
+      display:block;
+  }
+
+  .ghostCircle, .activeDrag .ghostCircle{
+       display: none;
+  }
+
+</style>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3tree.js"></script>
+<body>
+    <div id="tree-container"></div>
+</body>
+</html>
